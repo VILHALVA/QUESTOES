@@ -9,15 +9,17 @@
 ## DESCRIÇÃO:
 O programa é um quiz interativo que apresenta perguntas sobre uma matéria específica. Aqui está uma descrição mais concisa:
 
-1. **Boas-vindas:** Sauda o jogador e informa sobre a matéria das perguntas.
+1. **Menu principal:** O usuário poderá escolher mais de 20 matérias.
 
-2. **Perguntas:** Apresenta uma série de perguntas ao usuário.
+2. **Boas-vindas:** Sauda o jogador e informa sobre a matéria das perguntas.
 
-3. **Respostas:** Aceita as respostas do usuário (A, B, C ou D) para cada pergunta.
+3. **Perguntas:** Apresenta uma série de perguntas ao usuário.
 
-4. **Feedback:** Fornece feedback imediato sobre a correção da resposta.
+4. **Respostas:** Aceita as respostas do usuário (A, B, C ou D) para cada pergunta.
 
-5. **Resultado Final:** Ao final, exibe estatísticas, incluindo questões corretas, questões erradas, quantidade de acertos, quantidade de erros, média de acertos e determina se o jogador foi aprovado ou reprovado com base em uma porcentagem mínima de acertos.
+5. **Feedback:** Fornece feedback imediato sobre a correção da resposta.
+
+6. **Resultado Final:** Ao final, exibe estatísticas, incluindo questões corretas, questões erradas, quantidade de acertos, quantidade de erros, média de acertos e determina se o jogador foi aprovado ou reprovado com base em uma porcentagem mínima de acertos.
 
 ## ATUALIZAÇÕES:
 ## ![GitHub Repo stars](https://img.shields.io/badge/-VERS%C3%83O%201.3%20--%2021%2F12%2F2023-blueviolet)
