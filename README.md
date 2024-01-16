@@ -22,6 +22,13 @@ O programa é um quiz interativo que apresenta perguntas sobre uma matéria espe
 6. **Resultado Final:** Ao final, exibe estatísticas, incluindo questões corretas, questões erradas, quantidade de acertos, quantidade de erros, média de acertos e determina se o jogador foi aprovado ou reprovado com base em uma porcentagem mínima de acertos.
 
 ## ATUALIZAÇÕES:
+## ![GitHub Repo stars](https://img.shields.io/badge/-VERS%C3%83O%201.4%20--%2016%2F01%2F2024-blueviolet)
+* ✅Foi adicionado um sistema de validação para empedir que o usuário deixe uma questão em branco ou digite um valor inválido.
+* ✅Foi corrigido o bug de fechamento inesperado do arquivo executavel.
+* ✅Foi corrigido o valor da média no resultado final. Agora só exibe um valor inteiro.
+* ✅Depois de exibir o resultado o programa fecha em 10 segundos.
+![](https://i.imgur.com/waxVImv.png)
+
 ## ![GitHub Repo stars](https://img.shields.io/badge/-VERS%C3%83O%201.3%20--%2021%2F12%2F2023-blueviolet)
 * ❇️Foi adicionado um `MENU PRINCIPAL`; Ao iniciar o app, o usuário poderá escolher a máteria apenas digitando o número correspondente (Já tem o sistema de validação).
 * ❇️Novas máterias foram adicionadas:
