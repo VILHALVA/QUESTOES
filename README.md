@@ -26,7 +26,7 @@ O programa é um quiz interativo que apresenta perguntas sobre uma matéria espe
 * ✅Foi adicionado um sistema de validação para empedir que o usuário deixe uma questão em branco ou digite um valor inválido.
 * ✅Foi corrigido o bug de fechamento inesperado do arquivo executavel.
 * ✅Foi corrigido o valor da média no resultado final. Agora só exibe um valor inteiro.
-* ✅Depois de exibir o resultado o programa fecha em 10 segundos.
+* ✅Depois de exibir o resultado o programa fecha em 60 segundos (Exibe uma contagem regressiva).
 ![](https://i.imgur.com/waxVImv.png)
 
 ## ![GitHub Repo stars](https://img.shields.io/badge/-VERS%C3%83O%201.3%20--%2021%2F12%2F2023-blueviolet)
