@@ -22,6 +22,42 @@ O programa é um quiz interativo que apresenta perguntas sobre uma matéria espe
 6. **Resultado Final:** Ao final, exibe estatísticas, incluindo questões corretas, questões erradas, quantidade de acertos, quantidade de erros, média de acertos e determina se o jogador foi aprovado ou reprovado com base em uma porcentagem mínima de acertos.
 
 ## ATUALIZAÇÕES:
+## ![GitHub Repo stars](https://img.shields.io/badge/-VERS%C3%83O%201.5%20--%2018%2F01%2F2024-blueviolet)
+* 🈯️No `MENU PRINCIPAL`, substituímos as estruturas condicionais (if, elif) por um dicionário para mapear as opções diretamente para as funções correspondentes.
+* ✅Foi adicionado um laço de repetição: Toda a vez que o usuário terminar de responder as questões e sair o resultado, o programa reinicia automaticamente; Dando a oportunidade para responder outras máterias sem a necissidade de reiniciar o App. O programa só para quando o usuário digitar `0` (SAIR DO PROGRAMA). 
+* ❇️30 novas máterias foram adicionadas:
+*   🔸HISTÓRIA DO BRASIL
+*   🔸GEOGRAFIA DO BRASIL
+*   🔸CIVISMO
+*   🔸INFORMATICA
+*   🔸ENGENHARIA CIVIL
+*   🔸AGRONOMIA
+*   🔸TURISMO
+*   🔸ENGENHARIA ELÉTRICA
+*   🔸ADMINISTRAÇÃO EMPRESARIAL
+*   🔸PEDAGOGIA
+*   🔸PSICANÁLISE
+*   🔸JORNALISMO
+*   🔸ENFERMAGEM
+*   🔸NUTRIÇÃO
+*   🔸EDUCAÇÃO FÍSICA
+*   🔸ESPANHOL
+*   🔸INGLÊS
+*   🔸HEBRAICO
+*   🔸GREGO
+*   🔸BIOMEDICINA
+*   🔸MEDICINA VETERINARIA
+*   🔸ADVOCACIA
+*   🔸FISIOTERAPIA
+*   🔸CIBER SEGURANÇA
+*   🔸ENGENHARIA MECÂNICA
+*   🔸ANTROPOLOGIA
+*   🔸GEOLOGIA
+*   🔸PALEONTOLOGIA
+*   🔸AVIAÇÃO
+*   🔸ENGENHARIA FLORESTAL
+![](https://i.imgur.com/waxVImv.png)
+
 ## ![GitHub Repo stars](https://img.shields.io/badge/-VERS%C3%83O%201.4%20--%2016%2F01%2F2024-blueviolet)
 * ✅Foi adicionado um sistema de validação para empedir que o usuário deixe uma questão em branco ou digite um valor inválido.
 * ✅Foi corrigido o bug de fechamento inesperado do arquivo executavel.
@@ -31,7 +67,7 @@ O programa é um quiz interativo que apresenta perguntas sobre uma matéria espe
 
 ## ![GitHub Repo stars](https://img.shields.io/badge/-VERS%C3%83O%201.3%20--%2021%2F12%2F2023-blueviolet)
 * ❇️Foi adicionado um `MENU PRINCIPAL`; Ao iniciar o app, o usuário poderá escolher a máteria apenas digitando o número correspondente (Já tem o sistema de validação).
-* ❇️Novas máterias foram adicionadas:
+* ❇️17 novas máterias foram adicionadas:
     * 🔸PORTUGUES
     * 🔸MATEMATICA
     * 🔸QUIMICA
