@@ -4,7 +4,7 @@
 [![GitHub Repo stars](https://img.shields.io/badge/VILHALVA-GITHUB-03A9F4?logo=github)](https://github.com/VILHALVA)
 [![GitHub Repo stars](https://img.shields.io/badge/MEUS-CURSOS-03A9F4?logo=github)](https://github.com/VILHALVA?tab=repositories&q=CURSO&type=public&language=&sort=)
 
-<img src="https://play-lh.googleusercontent.com/UVVPpEnR8NIiRtarmsbuI171Lin3GtcQoCJOi7BFDv_WajaDreXJT7xB-HR3PxxTH8G7=s256-rw" align="center" width="280"> <br>
+<img src="FOTO.png"center" width="300"> <br>
 
 ## DESCRIÇÃO:
 O programa é um quiz interativo que apresenta perguntas sobre uma matéria específica. Aqui está uma descrição mais concisa:
