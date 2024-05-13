@@ -28,12 +28,28 @@ O programa é um quiz interativo que apresenta perguntas sobre uma matéria espe
 7. Quando terminar de usar o programa, escolha a opção `0` para sair.
 
 ## SOBRE O EXECUTAVEL:
+### 1. EXECUTANDO:
 - Este arquivo executável está disponível apenas para `Windows X64` (No diretório `APP`). Para executá-lo, basta dar dois cliques. O executável é bastante útil caso o Python não esteja instalado. Trata-se da mesma aplicação do arquivo `MAIN.py`. Se desejar, você pode recompilá-lo novamente; é para isso que forneci o arquivo `imagem.ico`.
+
+### 2. GERANDO:
+   **1. Instalação do [PyInstaller:](https://pyinstaller.org/en/stable/)**
+   - Certifique-se de ter o PyInstaller instalado. Se não tiver, instale usando o comando abaixo:
+   ```bash
+   pip install pyinstaller
+   ```
+
+   **2. Gerando o Executável:**
+   - Para gerar o executável, utilize o comando `pyinstaller` seguido de opções:
+      - `--icon="imagem.ico"`: Especifica o ícone do executável.
+      - `-F`: Gera um único arquivo executável em vez de vários.
+      - `MAIN.py`: Substitua "MAIN.py" pelo nome do seu arquivo Python principal.
+   ```bash
+   pyinstaller --icon="imagem.ico" -F MAIN.py
+   ```
 
 ## NÃO SABE?
 - Entendemos que para manipular arquivos em muitas linguagens e tecnologias, é necessário possuir conhecimento nessas áreas. Para auxiliar nesse aprendizado, oferecemos cursos gratuitos disponíveis:
 * [CURSO DE PYTHON](https://github.com/VILHALVA/CURSO-DE-PYTHON)
-* [CURSO DE EXE](https://github.com/VILHALVA/CURSO-DE-EXE)
 * [CONFIRA MAIS CURSOS](https://github.com/VILHALVA?tab=repositories&q=+topic:CURSO)
 
 ## CREDITOS E MAIS:
