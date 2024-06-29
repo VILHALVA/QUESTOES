@@ -1,4 +1,7 @@
 # ATUALIZAÇÕES:
+## VERSÃO 1.6 - 29/06/2024:
+* ✅Foi criado um instalador para Windows X64 apartir do executavel.
+
 ## VERSÃO 1.5 - 18/01/2024:
 * ✅No `MENU PRINCIPAL`, substituímos as estruturas condicionais (if, elif) por um dicionário para mapear as opções diretamente para as funções correspondentes.
 * ✅Foi adicionado um laço de repetição: Toda a vez que o usuário terminar de responder as questões e sair o resultado, o programa reinicia automaticamente; Dando a oportunidade para responder outras máterias sem a necissidade de reiniciar o App. O programa só para quando o usuário digitar `0` (SAIR DO PROGRAMA). 
