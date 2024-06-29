@@ -60,7 +60,7 @@ O programa é um quiz interativo que apresenta perguntas sobre uma matéria espe
 3. **Informações Básicas**:
    - **Application Information**: Preencha as informações da sua aplicação, como nome, versão, nome do publisher e website.
    - **Application Destination Base Folder**: Normalmente, você pode deixar como "{pf}\YourAppName" (para instalar no diretório de Program Files).
-   - **Application Directory**: Selecione a pasta onde estão os arquivos da sua aplicação. Em `./CODIGO` desse repositório.
+   - **Application Directory**: Selecione a pasta onde estão os arquivos da sua aplicação. Em `./APP` desse repositório.
    - **Application Files**: Adicione todos os arquivos necessários para a instalação da sua aplicação (executáveis, DLLs, etc).
    - **Application Shortcuts**: Escolha se deseja criar atalhos no menu Iniciar, na área de trabalho, etc.
    - **Application Documentation**: Adicione arquivos de licença e outros documentos necessários.
