@@ -19,13 +19,15 @@ O programa é um quiz interativo que apresenta perguntas sobre uma matéria espe
 6. **Resultado Final:** Ao final, exibe estatísticas, incluindo questões corretas, questões erradas, quantidade de acertos, quantidade de erros, média de acertos e determina se o jogador foi aprovado ou reprovado com base em uma porcentagem mínima de acertos.
 
 ## EXECUTANDO O PROJETO:
-1. Certifique-se de que todos os arquivos de código fonte listados no início do `CODIGO/MAIN.py` estão presentes no mesmo diretório que o arquivo `MAIN.py`.
-2. Execute o arquivo `CODIGO/MAIN.py` em um ambiente Python.
-3. Isso abrirá o menu principal do programa no console.
-4. Leia as opções do menu e escolha a opção desejada digitando o número correspondente.
-5. O programa executará a função associada à opção escolhida.
-6. Após a execução da opção escolhida, o programa retornará ao menu principal, onde você pode escolher outra opção ou sair do programa digitando `0`.
-7. Quando terminar de usar o programa, escolha a opção `0` para sair.
+1. Navegue até o diretório `./CODIGO`, e execute o arquivo Python com o comando:
+```bash
+python MAIN.py
+```
+2. Isso abrirá o menu principal do programa no console.
+3. Leia as opções do menu e escolha a opção desejada digitando o número correspondente.
+4. O programa executará a função associada à opção escolhida.
+5. Após a execução da opção escolhida, o programa retornará ao menu principal, onde você pode escolher outra opção ou sair do programa digitando `0`.
+6. Quando terminar de usar o programa, escolha a opção `0` para sair.
 
 ## SOBRE O EXECUTAVEL E O INSTALADOR:
 ### 1. EXECUTANDO:
