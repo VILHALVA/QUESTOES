@@ -1,4 +1,49 @@
 # ATUALIZAÇÕES:
+## VERSÃO 1.7 - 26/09/2024:
+### ✅ PRINCIPAIS MUDANÇAS REALIZADAS NA ESTRUTURA DO PROJETO:
+1. **Novo arquivo `config.py`**:
+   - 🔸 Criado para centralizar todas as importações e dependências do projeto. Agora, todos os arquivos fazem referência a este arquivo, simplificando a gestão de imports e prevenindo possíveis conflitos de importação.
+
+2. **Renomeação e reorganização de arquivos**:
+   - 🔸 O antigo arquivo `AAAA.py` foi renomeado para `central.py` e movido para o diretório `model`.
+   - 🔸 As funções `apresentação` e `final` agora estão localizadas nos arquivos `apresentacao.py` e `final.py`, dentro do diretório `model`.
+
+3. **Padronização de nomes de arquivos**:
+   - 🔸 Todos os arquivos foram renomeados, deixando de estar em UPPERCASE para ficarem em lowercase, seguindo boas práticas de nomeação.
+
+4. **Reclassificação do projeto**:
+   - ✅ Este projeto foi reclassificado e não faz mais parte da categoria de [APLICATIVOS](https://github.com/VILHALVA?tab=repositories&q=topic:APLICATIVO+topic:TERMINAL). Agora ele pertence à categoria de [BOTS](https://github.com/VILHALVA?tab=repositories&q=topic:BOT+topic:TERMINAL). Com isso, o executável e o instalador foram removidos.
+
+### 🔵 ESTRUTURA DE DIRETÓRIOS:
+- **Antes:**
+  ```plaintext
+  /CODIGO
+  │
+  ├── MAIN.py
+  ├── AAAA.py
+  └── APRESENTACAO.py
+  └── // Outros arquivos...
+  ```
+
+- **Depois:**
+  ```plaintext
+  /CODIGO
+  │
+  ├── /plugins
+  │   ├── matematica.py
+  │   ├── biologia.py
+  │   └── // Outros arquivos...
+  │
+  ├── /model
+  │   └── central.py
+  │   └── apresentacao.py
+  |   └── final.py
+  ├── config.py
+  └── main.py
+  ```
+
+---
+
 ## VERSÃO 1.6 - 29/06/2024:
 * ✅Foi criado um instalador para Windows X64 apartir do executavel.
 ---
