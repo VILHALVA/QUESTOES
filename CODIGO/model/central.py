@@ -1,11 +1,11 @@
 from config import *
 
 def INICIO(MATERIA):
-    print(f"😃Olá novo jogador! Irei te mandar algumas questões de: >>> {MATERIA} <<<.") 
+    print(f"😃OLÁ NOVO JOGADOR! IREI TE MANDAR ALGUMAS QUESTÕES DE: >>> {MATERIA} <<<.") 
     sleep(1)
-    print("😃Lembrando que você só irá ser aprovado com mais de 70% de acertos!") 
+    print("😃LEMBRANDO QUE VOCÊ SÓ IRÁ SER APROVADO COM MAIS DE 70% DE ACERTOS!") 
     sleep(1)
-    print("😃Então vamos começar!")
+    print("😃ENTÃO VAMOS COMEÇAR!")
     for c in range(0, 101, 1):
         print(f"⌛CARREGANDO({c}%)...",end="\r")
         sleep(0.1) 
@@ -16,10 +16,10 @@ def VALOR_INT(msg):
         try:
             n = int(input(msg))
         except (ValueError, TypeError):
-            print("😬ERRO! Digite um valor Inteiro!!!")
+            print("😬ERRO! DIGITE UM VALOR INTEIRO!!!")
             continue
         except KeyboardInterrupt:
-            print("🔺Houve erro! Usuário não digitou valor!")
+            print("🔺HOUVE ERRO! USUÁRIO NÃO DIGITOU VALOR!")
             return n
         else:
             return n 
@@ -33,11 +33,11 @@ def QUESTAO(msg):
 GABARITO = [[],[]]
 def RESPOSTA(CERTA, QUESTAO):
     while True:
-        RES = input("😎Digite sua resposta:\n>>>").strip().upper()
+        RES = input("😎DIGITE SUA RESPOSTA:\n>>>").strip().upper()
         if not RES:
-            print("⛔ERRO! Você deve digitar uma resposta.")
+            print("⛔ERRO! VOCÊ DEVE DIGITAR UMA RESPOSTA.")
         elif RES not in "ABCD":
-            print("⛔ERRO! Resposta inválida. Digite A, B, C ou D.")
+            print("⛔ERRO! RESPOSTA INVÁLIDA. DIGITE A, B, C OU D.")
         else:
             break
 
@@ -59,16 +59,16 @@ def FIM():
     else:
         RESULTADO = "👍APROVADO"
 
-    print("=" * 100)
+    print("=" * 20)
     print("       RESULTADO FINAL            ")
-    print("_" * 100)
+    print("_" * 20)
     print(f"⭐QUESTÕES CORRETAS: {GABARITO[1]}")
     print(f"⭐QUESTÕES ERRADAS: {GABARITO[0]}")
     print(f"⭐QUANTIDADE DE ACERTOS: {ACERTOS} QUESTÕES")
     print(f"⭐QUANTIDADE DE ERROS: {len(GABARITO[0])} QUESTÕES")
     print(f"⭐SUA MÉDIA FOI: {MEDIA:.0f}%")
     print(f"⭐RESULTADO: {RESULTADO}")
-    print("_" * 100)
-    print("=" * 100)
+    print("_" * 20)
+    print("=" * 20)
     sleep(3)
     
