@@ -94,7 +94,7 @@ def FIM():
         
         with open(file_path, 'a', encoding='utf-8') as file:
             file.write(RES)  
-        print(f"😃O RESULTADO FINAL SALVO COM SUCESSO EM '{file_path}'!")
+        print(f"😃O RESULTADO FINAL FOI SALVO COM SUCESSO EM '{file_path}'!")
         sleep(3)
     else:
         print("🤨TUDO BEM. O RESULTADO FINAL NÃO FOI SALVO!")
