@@ -79,7 +79,7 @@ def FIM():
     print(RES)  
     sleep(3)
 
-    salvar = input("😃VOCÊ DESEJA SALVAR ESSE RESULTADO? ENVIE 'S' PARA CONFIRMAR!:\n>>> ").strip().upper()
+    salvar = input("😃VOCÊ DESEJA SALVAR ESSE RESULTADO FINAL? ENVIE 'S' PARA CONFIRMAR!:\n>>> ").strip().upper()
 
     if salvar == "S":
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  
@@ -94,8 +94,8 @@ def FIM():
         
         with open(file_path, 'a', encoding='utf-8') as file:
             file.write(RES)  
-        print(f"😃RESULTADO SALVO COM SUCESSO EM '{file_path}'!")
+        print(f"😃O RESULTADO FINAL SALVO COM SUCESSO EM '{file_path}'!")
         sleep(3)
     else:
-        print("🤨TUDO BEM. O RESULTADO NÃO FOI SALVO!")
+        print("🤨TUDO BEM. O RESULTADO FINAL NÃO FOI SALVO!")
         sleep(3)
