@@ -116,7 +116,7 @@ def main():
         if opcao in opcoes:
             opcoes[opcao]()  
         else:
-            print("😠Opção inválida. Tente novamente!")
+            print("😠OPÇÃO INVÁLIDA. TENTE NOVAMENTE!")
 
 if __name__ == "__main__":
     main()
