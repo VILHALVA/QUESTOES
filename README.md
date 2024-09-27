@@ -35,11 +35,11 @@ O Bot é um quiz interativo que apresenta perguntas sobre uma matéria específi
    python main.py
    ```
 
-3. **Interação com o menu principal:**
+3. **Escolha da Matéria:**
    - Assim que o bot iniciar, você verá um menu principal no console com várias matérias numeradas.
    - Leia as matérias disponíveis e digite o número correspondente à matéria que deseja responder.
 
-4. **Escolha da Matéria:**
+4. **Responda às perguntas**
    - O bot executará a matéria que você selecionou.
    - Responda às perguntas corretamente, enviando apenas uma das opções: `A`, `B`, `C` ou `D`.
    - Após apresentar o `RESULTADO FINAL`, o bot perguntará se você deseja salvar as informações. Envie `S` para confirmar ou qualquer outro caractere para recusar.
