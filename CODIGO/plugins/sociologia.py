@@ -1,7 +1,7 @@
 from config import *
 
 def sociologia():
-    INICIO(MATERIA="SOCIOLOGIA")
+    INICIO("SOCIOLOGIA")
 
     QUESTAO('''01) Qual é o conceito de "anomia" na sociologia, desenvolvido por Émile Durkheim?
         A) Conflito de classes sociais.

@@ -1,7 +1,7 @@
 from config import *
 
 def matematica():
-    INICIO(MATERIA="MATEMÁTICA")
+    INICIO("MATEMÁTICA")
 
     QUESTAO('''01) Qual é a solução da equação \(3x - 2 = 7\)?
         A) \(x = 5\)

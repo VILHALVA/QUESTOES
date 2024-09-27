@@ -1,7 +1,7 @@
 from config import *
 
 def literatura():
-    INICIO(MATERIA="LITERATURA")
+    INICIO("LITERATURA")
 
     QUESTAO('''01) Quem é o autor da obra "Dom Casmurro", considerada um dos principais romances da literatura brasileira?
         A) Machado de Assis.

@@ -1,7 +1,7 @@
 from config import *
 
 def engenharia_civil():
-    INICIO(MATERIA="ENGENHARIA CIVIL")
+    INICIO("ENGENHARIA CIVIL")
 
     QUESTAO('''01) Qual é a função de um engenheiro civil no projeto estrutural de uma ponte?
         A) Projetar sistemas elétricos.

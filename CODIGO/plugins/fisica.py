@@ -1,7 +1,7 @@
 from config import *
 
 def fisica():
-      INICIO(MATERIA = "FÍSICA")
+      INICIO("FÍSICA")
       QUESTAO('''01) (Enem-MEC) A dualidade onda-partícula para a luz permite afirmar que:
             A) A luz é a soma de uma particula e uma onda;
             B) A interpretação ondulatória se aplica a alguns fenômenos, enquanto corpuscular a outros;

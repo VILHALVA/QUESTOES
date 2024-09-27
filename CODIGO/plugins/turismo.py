@@ -1,7 +1,7 @@
 from config import *
 
 def turismo():
-    INICIO(MATERIA="TURISMO")
+    INICIO("TURISMO")
 
     QUESTAO('''01) O que é um ecoturista e quais são suas principais características?
         A) Alguém que viaja para destinos urbanos.

@@ -1,7 +1,7 @@
 from config import *
 
 def administracao():
-    INICIO(MATERIA="ADMINISTRAÇÃO EMPRESARIAL")
+    INICIO("ADMINISTRAÇÃO EMPRESARIAL")
 
     QUESTAO('''01) O que é a análise SWOT e como ela pode ser aplicada na gestão estratégica de uma empresa?
         A) Método de avaliação financeira.

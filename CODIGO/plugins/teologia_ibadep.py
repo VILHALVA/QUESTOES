@@ -1,7 +1,7 @@
 from config import *
 
 def teologia_ibadep():
-    INICIO(MATERIA = "TEOLOGIA IBADEP")
+    INICIO("TEOLOGIA IBADEP")
 
     QUESTAO('''01) A história do livro de Gênesis abrange o periodo de:
         A) 3720 anos;

@@ -1,7 +1,7 @@
 from config import *
 
 def biologia():
-    INICIO(MATERIA="BIOLOGIA")
+    INICIO("BIOLOGIA")
 
     QUESTAO('''01) Qual é a organela responsável pela produção de ATP na célula?
         A) Ribossomo.

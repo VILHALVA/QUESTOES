@@ -1,7 +1,7 @@
 from config import *
 
 def historia_do_brasil():
-    INICIO(MATERIA="HISTÓRIA DO BRASIL")
+    INICIO("HISTÓRIA DO BRASIL")
 
     QUESTAO('''01) Quem foi o primeiro imperador do Brasil?
         A) Dom Pedro II

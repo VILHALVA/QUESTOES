@@ -1,7 +1,7 @@
 from config import *
 
 def enfermagem():
-    INICIO(MATERIA="ENFERMAGEM")
+    INICIO("ENFERMAGEM")
 
     QUESTAO('''01) Explique o conceito de prescrição de enfermagem e como ela se diferencia da prescrição médica.
         A) Documento que autoriza a realização de procedimentos cirúrgicos.

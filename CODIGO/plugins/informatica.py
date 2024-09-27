@@ -1,7 +1,7 @@
 from config import *
 
 def informatica():
-    INICIO(MATERIA="INFORMÁTICA")
+    INICIO("INFORMÁTICA")
 
     QUESTAO('''01) Qual é a principal diferença entre um software de código aberto e um software proprietário?
         A) Custo

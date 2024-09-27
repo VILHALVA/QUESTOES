@@ -1,7 +1,7 @@
 from config import *
 
 def tecnologia():
-    INICIO(MATERIA="TECNOLOGIA")
+    INICIO("TECNOLOGIA")
 
     QUESTAO('''01) O que significa a sigla "HTML" no contexto da programação web?
         A) HyperText Markup Language.

@@ -1,7 +1,7 @@
 from config import *
 
 def medicina():
-    INICIO(MATERIA="MEDICINA")
+    INICIO("MEDICINA")
 
     QUESTAO('''01) Qual é a principal função dos glóbulos brancos no sistema imunológico?
         A) Produzir insulina.

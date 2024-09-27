@@ -1,7 +1,7 @@
 from config import *
 
 def politica():
-    INICIO(MATERIA="POLÍTICA")
+    INICIO("POLÍTICA")
 
     QUESTAO('''01) O que é a separação dos poderes, um dos princípios fundamentais da organização política moderna?
         A) Concentração de todos os poderes em um único órgão.

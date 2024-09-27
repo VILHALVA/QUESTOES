@@ -1,7 +1,7 @@
 from config import *
 
 def ingles():
-    INICIO(MATERIA="INGLÊS")
+    INICIO("INGLÊS")
 
     QUESTAO('''01) Explique a diferença entre os tempos verbais "present perfect" e "past simple" em inglês.
         A) Ambos os tempos verbais indicam ações passadas concluídas, mas "present perfect" é usado para ações recentes e "past simple" para ações mais distantes no passado.

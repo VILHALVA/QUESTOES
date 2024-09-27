@@ -1,7 +1,7 @@
 from config import *
 
 def economia():
-    INICIO(MATERIA="ECONOMIA")
+    INICIO("ECONOMIA")
 
     QUESTAO('''01) O que é inflação?
         A) Redução generalizada dos preços.

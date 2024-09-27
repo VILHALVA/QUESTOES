@@ -1,7 +1,7 @@
 from config import *
 
 def religiao():
-    INICIO(MATERIA="RELIGIÃO")
+    INICIO("RELIGIÃO")
 
     QUESTAO('''01) Qual é o livro sagrado do Islã, considerado a palavra de Deus revelada a Maomé?
         A) Bíblia.

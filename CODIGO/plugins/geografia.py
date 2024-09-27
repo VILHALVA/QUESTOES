@@ -1,7 +1,7 @@
 from config import *
 
 def geografia():
-    INICIO(MATERIA="GEOGRAFIA")
+    INICIO("GEOGRAFIA")
 
     QUESTAO('''01) Qual é o maior oceano do planeta?
         A) Atlântico.

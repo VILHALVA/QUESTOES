@@ -1,7 +1,7 @@
 from config import *
 
 def jornalismo():
-    INICIO(MATERIA="JORNALISMO")
+    INICIO("JORNALISMO")
 
     QUESTAO('''01) Qual é o papel do ombudsman em um veículo de comunicação e como ele contribui para a ética jornalística?
         A) Profissional responsável pela elaboração de manchetes impactantes.

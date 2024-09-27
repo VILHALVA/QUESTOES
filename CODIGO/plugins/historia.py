@@ -1,7 +1,7 @@
 from config import *
 
 def historia():
-    INICIO(MATERIA="HISTÓRIA")
+    INICIO("HISTÓRIA")
 
     QUESTAO('''01) Quem foi o líder político responsável pela independência do Brasil em 1822?
         A) Dom Pedro II.

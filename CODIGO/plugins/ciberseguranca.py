@@ -1,7 +1,7 @@
 from config import *
 
 def ciberseguranca():
-    INICIO(MATERIA="CIBER SEGURANÇA")
+    INICIO("CIBER SEGURANÇA")
 
     QUESTAO('''01) Explique o conceito de ataque de phishing e como os usuários podem se proteger contra essa ameaça.
         A) Phishing não é uma ameaça real.

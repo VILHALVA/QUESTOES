@@ -1,7 +1,7 @@
 from config import *
 
 def nutricao():
-    INICIO(MATERIA="NUTRIÇÃO")
+    INICIO("NUTRIÇÃO")
 
     QUESTAO('''01) Explique a diferença entre macronutrientes e micronutrientes e forneça exemplos de cada um.
         A) Macronutrientes são nutrientes essenciais em quantidades mínimas, enquanto micronutrientes são necessários em grandes quantidades. Exemplos: carboidratos, proteínas e gorduras (macronutrientes); vitaminas e minerais (micronutrientes).

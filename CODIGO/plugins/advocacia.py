@@ -1,7 +1,7 @@
 from config import *
 
 def advocacia():
-    INICIO(MATERIA="ADVOCACIA")
+    INICIO("ADVOCACIA")
 
     QUESTAO('''01) Explique o princípio do contraditório e da ampla defesa no contexto jurídico.
         A) Contraditório e ampla defesa são termos irrelevantes no direito.

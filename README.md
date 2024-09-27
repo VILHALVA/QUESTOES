@@ -19,11 +19,11 @@ O Bot é um quiz interativo que apresenta perguntas sobre uma matéria específi
 6. **Resultado Final:** Ao final, exibe estatísticas, incluindo questões corretas, questões erradas, quantidade de acertos, quantidade de erros, média de acertos e determina se o jogador foi aprovado ou reprovado com base em uma porcentagem mínima de acertos.
 
 ## EXECUTANDO O PROJETO:
-1. **Navegue até o diretório do projeto:**
-   - No terminal, navegue até o diretório `./CODIGO`, onde o arquivo `main.py` está localizado. Use o seguinte comando:
-   ```bash
-   cd ./CODIGO
-   ```
+1. **Instalar as dependências**:
+   - Antes de rodar o bot, é essencial garantir que todas as dependências estejam instaladas. No terminal, navegue até o diretório `CODIGO` e execute o seguinte comando para instalar os pacotes listados no arquivo `requirements.txt`:
+     ```bash
+     pip install -r requirements.txt
+     ```
 
 2. **Execute o programa:**
    - Para iniciar o programa, execute o comando abaixo:

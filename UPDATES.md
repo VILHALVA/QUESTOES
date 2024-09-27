@@ -1,4 +1,11 @@
 # ATUALIZAÇÕES:
+## VERSÃO 1.8 - 27/09/2024:
+* ✅ Foi implementada uma arte ASCII gerada dinamicamente com a biblioteca **PyFiglet**, que exibe o texto 'QUESTOES' em um formato estilizado no console. Para facilitar a instalação dessa e de outras dependências, foi criado o arquivo `requirements.txt`."
+* ✅ O `RESULTADO FINAL` foi redesenhado e refatorado para incluir mais informações relevantes, como `MATERIA` e `TIME`, apresentados no formato: dd/mm/aa - hh:mm:ss. 
+* ✅ Agora, ao final da exibição do `RESULTADO FINAL`, o sistema perguntará ao usuário se deseja salvar as informações. Caso a resposta seja afirmativa, o resultado será salvo em um arquivo `.txt` no diretório `./CODIGO/files`, com o nome `QUESTOES_{MATERIA}_{TIME}.txt`. O arquivo conterá os mesmos dados que foram exibidos no console, bastando confirmar com a letra 'S'.
+* ✅ Para garantir que o nome da matéria seja exibido corretamente no `RESULTADO FINAL`, foi necessário modificar todos os arquivos em `./CODIGO/plugins`. A alteração envolveu a modificação da chamada de função de `INICIO("MATERIA = NOME DA MATERIA")` para `INICIO(NOME DA MATERIA")`. Com essa mudança, a variável `materia/MATERIA` agora é tratada como uma variável global, permitindo que seu valor seja acessado de forma consistente em todo o sistema.
+---
+
 ## VERSÃO 1.7 - 26/09/2024:
 ### ✅ PRINCIPAIS MUDANÇAS REALIZADAS NA ESTRUTURA DO PROJETO:
 1. **Novo arquivo `config.py`**:

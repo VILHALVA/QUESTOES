@@ -1,7 +1,7 @@
 from config import *
 
 def grego():
-    INICIO(MATERIA="GREGO")
+    INICIO("GREGO")
 
     QUESTAO('''01) Explique a diferença entre os casos gramaticais "nominativo" e "genitivo" no grego clássico.
         A) O nominativo é usado para indicar posse, enquanto o genitivo indica o sujeito da frase.

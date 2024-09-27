@@ -1,7 +1,7 @@
 from config import *
 
 def espanhol():
-    INICIO(MATERIA="ESPANHOL")
+    INICIO("ESPANHOL")
 
     QUESTAO('''01) Explique a diferença entre os tempos verbais "preterito perfecto" e "preterito indefinido" em espanhol.
         A) Ambos os tempos verbais indicam ações passadas concluídas, mas o "preterito perfecto" é usado para ações recentes ou com relevância no presente, enquanto o "preterito indefinido" refere-se a ações passadas sem relação direta com o presente.

@@ -1,7 +1,7 @@
 from config import *
 
 def educacao_fisica():
-    INICIO(MATERIA="EDUCAÇÃO FÍSICA")
+    INICIO("EDUCAÇÃO FÍSICA")
 
     QUESTAO('''01) Explique o conceito de periodização do treinamento esportivo e como ela pode ser aplicada para otimizar o desempenho atlético.
         A) Método que visa apenas a diversificação das atividades físicas.

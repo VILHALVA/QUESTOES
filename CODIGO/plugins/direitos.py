@@ -1,7 +1,7 @@
 from config import *
 
 def direitos():
-    INICIO(MATERIA="DIREITOS")
+    INICIO("DIREITOS")
 
     QUESTAO('''01) O que são direitos fundamentais, conforme a Constituição Brasileira?
         A) Privilégios concedidos apenas a determinados grupos.

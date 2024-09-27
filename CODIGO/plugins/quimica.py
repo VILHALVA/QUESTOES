@@ -1,7 +1,7 @@
 from config import *
 
 def quimica():
-    INICIO(MATERIA="QUÍMICA")
+    INICIO("QUÍMICA")
 
     QUESTAO('''01) Qual é a função principal de um catalisador em uma reação química?
         A) Aumentar a temperatura da reação.

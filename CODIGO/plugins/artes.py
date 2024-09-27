@@ -1,7 +1,7 @@
 from config import *
 
 def artes():
-    INICIO(MATERIA="ARTES")
+    INICIO("ARTES")
 
     QUESTAO('''01) Qual movimento artístico foi caracterizado por formas geométricas, cores vibrantes e abstração?
         A) Renascimento.

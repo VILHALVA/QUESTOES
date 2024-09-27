@@ -1,7 +1,7 @@
 from config import *
 
 def agronomia():
-    INICIO(MATERIA="AGRONOMIA")
+    INICIO("AGRONOMIA")
 
     QUESTAO('''01) Qual é a principal função dos nódulos nas raízes de plantas leguminosas?
         A) Armazenamento de água.

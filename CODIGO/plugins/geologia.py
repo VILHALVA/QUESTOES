@@ -1,7 +1,7 @@
 from config import *
 
 def geologia():
-    INICIO(MATERIA="GEOLOGIA")
+    INICIO("GEOLOGIA")
 
     QUESTAO('''01) Explique o processo de subdução e como ele está relacionado com a formação de fossas oceânicas.
         A) A subdução envolve o movimento de uma placa teutônica abaixo de outra, levando à formação de fossas oceânicas. Como esse processo molda a crosta terrestre?

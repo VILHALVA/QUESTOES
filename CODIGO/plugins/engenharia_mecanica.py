@@ -1,7 +1,7 @@
 from config import *
 
 def engenharia_mecanica():
-    INICIO(MATERIA="ENGENHARIA MECÂNICA")
+    INICIO("ENGENHARIA MECÂNICA")
 
     QUESTAO('''01) Explique o princípio de funcionamento de um motor de combustão interna e os diferentes ciclos utilizados nessa tecnologia.
         A) Motores de combustão interna não são utilizados.

@@ -1,7 +1,7 @@
 from config import *
 
 def geografia_do_brasil():
-    INICIO(MATERIA="GEOGRAFIA DO BRASIL")
+    INICIO("GEOGRAFIA DO BRASIL")
 
     QUESTAO('''01) Qual é o rio mais extenso do Brasil?
         A) Rio Paraná

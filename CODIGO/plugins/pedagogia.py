@@ -1,7 +1,7 @@
 from config import *
 
 def pedagogia():
-    INICIO(MATERIA="PEDAGOGIA")
+    INICIO("PEDAGOGIA")
 
     QUESTAO('''01) Explique o conceito de construtivismo na educação e como ele influencia as práticas pedagógicas.
         A) Teoria que enfatiza a importância da aprendizagem por meio da memorização.

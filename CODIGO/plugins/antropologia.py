@@ -1,7 +1,7 @@
 from config import *
 
 def antropologia():
-    INICIO(MATERIA="ANTROPOLOGIA")
+    INICIO("ANTROPOLOGIA")
 
     QUESTAO('''01) Explique como o conceito de "liminaridade", proposto por Victor Turner, contribui para a compreensão dos rituais de passagem em diferentes sociedades.
         A) Victor Turner introduziu o conceito de liminaridade para descrever a fase de transição nos rituais. Como essa ideia é aplicada nas análises antropológicas dos rituais de passagem?

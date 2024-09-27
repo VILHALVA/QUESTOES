@@ -1,7 +1,7 @@
 from config import *
 
 def engenharia_eletrica():
-    INICIO(MATERIA="ENGENHARIA ELÉTRICA")
+    INICIO("ENGENHARIA ELÉTRICA")
 
     QUESTAO('''01) O que é um circuito elétrico trifásico e como ele se diferencia de um circuito monofásico?
         A) Circuito com três dispositivos conectados em série, diferente do circuito monofásico que possui apenas um dispositivo.

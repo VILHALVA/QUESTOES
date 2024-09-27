@@ -1,7 +1,7 @@
 from config import *
 
 def engenharia_florestal():
-    INICIO(MATERIA="ENGENHARIA FLORESTAL")
+    INICIO("ENGENHARIA FLORESTAL")
 
     QUESTAO('''01) Discuta os desafios e benefícios da implementação de técnicas de agrossilvicultura em plantações florestais e como elas podem contribuir para a sustentabilidade.
         A) A agrossilvicultura é uma abordagem ineficaz na engenharia florestal.

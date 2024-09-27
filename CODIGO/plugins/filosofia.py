@@ -1,7 +1,7 @@
 from config import *
 
 def filosofia():
-    INICIO(MATERIA="FILOSOFIA")
+    INICIO("FILOSOFIA")
 
     QUESTAO('''01) Qual filósofo grego é considerado o "Pai da Filosofia"?
         A) Sócrates.

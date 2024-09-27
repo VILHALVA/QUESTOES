@@ -1,7 +1,7 @@
 from config import *
 
 def fisioterapia():
-    INICIO(MATERIA="FISIOTERAPIA")
+    INICIO("FISIOTERAPIA")
 
     QUESTAO('''01) Explique o conceito de cinesioterapia e como ela é aplicada na prática fisioterapêutica.
         A) Cinesioterapia não tem relevância prática.

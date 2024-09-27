@@ -1,7 +1,7 @@
 from config import *
 
 def portugues():
-    INICIO(MATERIA="PORTUGUÊS")
+    INICIO("PORTUGUÊS")
 
     QUESTAO('''01) Identifique a alternativa em que a palavra destacada está empregada em sentido figurado:
         A) O sol está quente hoje.

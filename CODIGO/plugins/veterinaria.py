@@ -1,7 +1,7 @@
 from config import *
 
 def veterinaria():
-    INICIO(MATERIA="MEDICINA VETERINARIA")
+    INICIO("MEDICINA VETERINARIA")
 
     QUESTAO('''01) Explique o conceito de zoonoses e dê exemplos de doenças zoonóticas relevantes para a prática veterinária.
         A) Zoonoses são doenças exclusivas de animais, sem risco de transmissão para humanos.

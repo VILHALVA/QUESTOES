@@ -1,7 +1,7 @@
 from config import *
 
 def paleontologia():
-    INICIO(MATERIA="PALEONTOLOGIA")
+    INICIO("PALEONTOLOGIA")
 
     QUESTAO('''01) Explique como a técnica de tomografia computadorizada (CT scan) é utilizada na paleontologia para estudar fósseis sem danificar as amostras.
         A) A tomografia computadorizada permite a visualização interna de fósseis sem a necessidade de danificar as amostras. Como essa técnica contribui para a pesquisa paleontológica?

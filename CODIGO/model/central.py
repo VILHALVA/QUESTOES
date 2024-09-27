@@ -1,7 +1,10 @@
 from config import *
 
-def INICIO(MATERIA):
-    print(f"😃OLÁ NOVO JOGADOR! IREI TE MANDAR ALGUMAS QUESTÕES DE: >>> {MATERIA} <<<.") 
+MATERIA = "" 
+def INICIO(materia):
+    global MATERIA  
+    MATERIA = materia  
+    print(f"😃OLÁ NOVO USUÁRIO! IREI TE MANDAR ALGUMAS QUESTÕES DE: >>> {MATERIA} <<<.") 
     sleep(1)
     print("😃LEMBRANDO QUE VOCÊ SÓ IRÁ SER APROVADO COM MAIS DE 70% DE ACERTOS!") 
     sleep(1)
@@ -23,7 +26,7 @@ def VALOR_INT(msg):
             return n
         else:
             return n 
-
+    
 def QUESTAO(msg):
     print()
     print("=" *100)
@@ -50,25 +53,49 @@ def RESPOSTA(CERTA, QUESTAO):
     sleep(1)
 
 def FIM():
+    TIME = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     TOTAL = len(GABARITO[1]) + len(GABARITO[0])
     ACERTOS = len(GABARITO[1])
     MEDIA = (ACERTOS / TOTAL) * 100
 
-    if ACERTOS < 0.7 * TOTAL:
-        RESULTADO = "👎REPROVADO"
-    else:
-        RESULTADO = "👍APROVADO"
+    RESULTADO = "👎REPROVADO" if ACERTOS < 0.7 * TOTAL else "👍APROVADO"
 
-    print("=" * 20)
-    print("       RESULTADO FINAL            ")
-    print("_" * 20)
-    print(f"⭐QUESTÕES CORRETAS: {GABARITO[1]}")
-    print(f"⭐QUESTÕES ERRADAS: {GABARITO[0]}")
-    print(f"⭐QUANTIDADE DE ACERTOS: {ACERTOS} QUESTÕES")
-    print(f"⭐QUANTIDADE DE ERROS: {len(GABARITO[0])} QUESTÕES")
-    print(f"⭐SUA MÉDIA FOI: {MEDIA:.0f}%")
-    print(f"⭐RESULTADO: {RESULTADO}")
-    print("_" * 20)
-    print("=" * 20)
-    sleep(3)
+    RES = f'''
+    =========================================
+        🔴RESULTADO FINAL:   
+    -----------------------------------------
+    ⭐TIME: {TIME}
+    ⭐MATERIA: {MATERIA}
+    ⭐QUESTÕES CORRETAS: {GABARITO[1]}
+    ⭐QUESTÕES ERRADAS: {GABARITO[0]}
+    ⭐QUANTIDADE DE ACERTOS: {ACERTOS} QUESTÕES
+    ⭐QUANTIDADE DE ERROS: {len(GABARITO[0])} QUESTÕES
+    ⭐SUA MÉDIA FOI: {MEDIA:.0f}%
+    ⭐RESULTADO: {RESULTADO}
+    ------------------------------------------
+    ==========================================
+    '''
     
+    print(RES)  
+    sleep(3)
+
+    salvar = input("😃DESEJA SALVAR O GABARITO DE RESULTADOS EM 'TXT'? ENVIE 'S' PARA SALVAR!:\n>>> ").strip().upper()
+
+    if salvar == "S":
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  
+        files_dir = os.path.join(base_dir, 'files')
+
+        if not os.path.exists(files_dir):
+            os.makedirs(files_dir)
+
+        TEMPO = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+        file_name = f"QUESTOES_{MATERIA}_{TEMPO}.txt"
+        file_path = os.path.join(files_dir, file_name)
+        
+        with open(file_path, 'a', encoding='utf-8') as file:
+            file.write(RES)  
+        print(f"😃GABARITO SALVO COM SUCESSO EM '{file_path}'!")
+        sleep(3)
+    else:
+        print("🤨TUDO BEM. O GABARITO NÃO FOI SALVO!")
+        sleep(3)

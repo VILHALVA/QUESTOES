@@ -1,7 +1,7 @@
 from config import *
 
 def hebraico():
-    INICIO(MATERIA="HEBRAICO")
+    INICIO("HEBRAICO")
 
     QUESTAO('''01) Explique a diferença entre os sistemas de escrita do hebraico moderno e do hebraico bíblico.
         A) O hebraico moderno e o hebraico bíblico usam os mesmos caracteres e regras de escrita.

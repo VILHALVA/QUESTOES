@@ -1,7 +1,7 @@
 from config import *
 
 def biomedicina():
-    INICIO(MATERIA="BIOMEDICINA")
+    INICIO("BIOMEDICINA")
 
     QUESTAO('''01) Explique o processo de PCR (Reação em Cadeia da Polimerase) e sua aplicação em Biomedicina.
         A) PCR é um método de clonagem de genes utilizado para criar organismos geneticamente modificados.

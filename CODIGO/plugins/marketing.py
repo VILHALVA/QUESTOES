@@ -1,7 +1,7 @@
 from config import *
 
 def marketing():
-    INICIO(MATERIA="MARKETING")
+    INICIO("MARKETING")
 
     QUESTAO('''01) O que é branding no contexto do marketing?
         A) Técnica de venda agressiva.

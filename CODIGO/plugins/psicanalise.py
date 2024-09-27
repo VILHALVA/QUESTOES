@@ -1,7 +1,7 @@
 from config import *
 
 def psicanalise():
-    INICIO(MATERIA="PSICANÁLISE")
+    INICIO("PSICANÁLISE")
 
     QUESTAO('''01) Qual é o conceito de inconsciente na teoria psicanalítica de Sigmund Freud?
         A) Área da mente que contém apenas pensamentos conscientes.

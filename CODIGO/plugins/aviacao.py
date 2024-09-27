@@ -1,7 +1,7 @@
 from config import *
 
 def aviacao():
-    INICIO(MATERIA="AVIAÇÃO")
+    INICIO("AVIAÇÃO")
 
     QUESTAO('''01) O que é o conceito de "stall" em aviação e como os pilotos podem recuperar a aeronave de um estado de estol.
         A) Stall refere-se à perda de sustentação em uma asa. Descreva como os pilotos podem recuperar a aeronave durante um estado de estol.

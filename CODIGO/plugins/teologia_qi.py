@@ -1,13 +1,12 @@
 from config import *
 
 def teologia_qi():
+    INICIO("TEOLOGIA: TESTE DE Q.I")
     print('''     ⚠️ AVISO IMPORTANTE:         
         Não temos o objetivo de medir o seu grau de conhecimento; A metodologia se baseia em interpretação e raciocinio lógico. Então vai algumas Dicas:
         >>> 1) As respostas estão nas perguntas;
         >>> 2) Leia com cautela até a última opção;
         >>> 3) Tente marcar a opção que se encaixa ao que está pedindo; Pois Teologicamente falando: Todas estão corretas''')
-
-    INICIO(MATERIA = "TEOLOGIA: TESTE DE Q.I")
 
     QUESTAO('''01) 🐵João chegou até Pedro e disse:\n
         🙉 - A crise financeira é tanta, que até o próprio Deus se dirigiu ao patrão para solicitar uma vaga de garí!

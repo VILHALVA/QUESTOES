@@ -1,7 +1,7 @@
 from config import *
 
 def civismo():
-    INICIO(MATERIA="CIVISMO")
+    INICIO("CIVISMO")
 
     QUESTAO('''01) Qual é o nome técnico dado ao processo de emenda da Constituição Federal?
         A) Alteração Constitucional
