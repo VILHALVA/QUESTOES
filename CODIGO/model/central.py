@@ -1,9 +1,8 @@
 from config import *
 
-MATERIA = "" 
-def INICIO(materia):
-    global MATERIA  
-    MATERIA = materia  
+def INICIO(materia): 
+    global MATERIA
+    MATERIA = materia   
     print(f"😃OLÁ NOVO USUÁRIO! IREI TE MANDAR ALGUMAS QUESTÕES DE: >>> {MATERIA} <<<.") 
     sleep(1)
     print("😃LEMBRANDO QUE VOCÊ SÓ IRÁ SER APROVADO COM MAIS DE 70% DE ACERTOS!") 
@@ -33,8 +32,11 @@ def QUESTAO(msg):
     print(msg)
     print("=" *100)
     
-GABARITO = [[],[]]
 def RESPOSTA(CERTA, QUESTAO):
+    global GABARITO
+    if 'GABARITO' not in globals():
+        GABARITO = [[],[]]  
+        
     while True:
         RES = input("😎DIGITE SUA RESPOSTA:\n>>>").strip().upper()
         if not RES:
