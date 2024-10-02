@@ -28,9 +28,9 @@ def VALOR_INT(msg):
     
 def QUESTAO(msg):
     print()
-    print("=" *100)
+    print("=" *20)
     print(msg)
-    print("=" *100)
+    print("=" *20)
     
 def RESPOSTA(CERTA, QUESTAO):
     global GABARITO
