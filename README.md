@@ -18,9 +18,11 @@ O Bot é um quiz interativo que apresenta perguntas sobre uma matéria específi
 
 5. **Feedback:** Fornece retorno imediato sobre a correção das respostas.
 
-6. **Resultado Final:** Ao término do quiz, são exibidas estatísticas que incluem o nome da matéria, a data e a hora, respostas corretas, respostas respondidas, questões que você acertou, questões que você errou, quantidade de acertos, quantidade de erros, média de acertos, e a aprovação ou reprovação do jogador com base em uma porcentagem mínima de acertos.
+6. **Cores no terminal:** As mensagens são destacadas com Vermelho, Verde, Azul e Ciano! Algumas seções mantêm o padrão sem cores para facilitar a leitura.
 
-7. **Salvar Resultado Final:** O sistema perguntará se o usuário deseja salvar as informações. Se afirmativo, o resultado será salvo em um arquivo `.txt` no diretório `./CODIGO/files`, com o nome `QUESTOES_{MATERIA}_{TIME}.txt`, contendo os mesmos dados exibidos no console.
+7. **Resultado Final:** Ao término do quiz, são exibidas estatísticas que incluem o nome da matéria, a data e a hora, respostas corretas, respostas respondidas, questões que você acertou, questões que você errou, quantidade de acertos, quantidade de erros, média de acertos, e a aprovação ou reprovação do jogador com base em uma porcentagem mínima de acertos.
+
+8. **Salvar Resultado Final:** O sistema perguntará se o usuário deseja salvar as informações. Se afirmativo, o resultado será salvo em um arquivo `.txt` no diretório `./CODIGO/files`, com o nome `QUESTOES_{MATERIA}_{TIME}.txt`, contendo os mesmos dados exibidos no console.
 
 ## O QUE É O RESULTADO FINAL?
 O **"RESULTADO FINAL"** é uma **compilação dos dados gerados ao longo de uma simulação de perguntas e respostas**, destinada a fornecer uma visão geral do desempenho do usuário. Ele é apresentado em um formato bem estruturado e organizado, com as seguintes informações:
