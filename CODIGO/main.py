@@ -1,6 +1,6 @@
 from config import *
 
-def main(): 
+def main():
     apresentacao()  
     opcoes = {
         0: final,
@@ -57,7 +57,7 @@ def main():
     } 
     
     while True:
-        print('''
+        print('''\033[91m\033[1m
             MENU PRINCIPAL:
             [ 0 ] SAIR DO PROGRAMA
             [ 1 ] PORTUGUES
@@ -110,13 +110,14 @@ def main():
             [ 48 ] PALEONTOLOGIA
             [ 49 ] AVIAÇÃO
             [ 50 ] ENGENHARIA FLORESTAL
+            \033[0m
             ''')
         sleep(1)
-        opcao = VALOR_INT("😎ESCOLHA UMA MATÉRIA:\n>>>")       
+        opcao = VALOR_INT("\033[93m 😎ESCOLHA UMA MATÉRIA:\n>>> \033[0m")       
         if opcao in opcoes:
             opcoes[opcao]()  
         else:
-            print("😠OPÇÃO INVÁLIDA. TENTE NOVAMENTE!")
+            print("\033[91m 😠OPÇÃO INVÁLIDA. TENTE NOVAMENTE! \033[0m")
 
 if __name__ == "__main__":
     main()
