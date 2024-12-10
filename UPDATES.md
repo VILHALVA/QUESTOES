@@ -15,8 +15,9 @@
     - **SUA MÉDIA FOI**  
     - **SITUAÇÃO**  
 
-- ✅ Alterações nas nomenclaturas do código (em `./CODIGO/model/central.py`):  
-  - `RES` foi renomeado para `RESULTADO`.  
+- ✅ Alterações nas estruturas e nomenclaturas do código (em `./CODIGO/model/central.py`):  
+  - O `GABARITO` foi convertido de uma lista para um dicionário.
+  - `RES` foi renomeado para `RESULTADO`. 
   - O antigo `RESULTADO` agora é chamado de `SITUAÇÃO`.  
 
 ### CORES NO TERMINAL:  
