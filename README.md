@@ -34,32 +34,32 @@ O **"RESULTADO FINAL"** é uma **compilação dos dados gerados ao longo de uma 
 
 3. **RESPOSTAS CORRETAS**:
    - Um dicionário que mostra quais eram as respostas certas para cada pergunta.  
-   Exemplo: `{1: 'D', 2: 'B', ...}` (onde o número da questão é associado à resposta correta).
+   - Exemplo: `{1: 'D', 2: 'B', ...}` (onde o número da questão é associado à resposta correta).
 
 4. **RESPOSTAS RESPONDIDAS**:
    - Um dicionário que exibe as respostas fornecidas pelo usuário para cada pergunta.  
-   Exemplo: `{1: 'D', 2: 'A', ...}`.
+   - Exemplo: `{1: 'D', 2: 'A', ...}`.
 
 5. **QUESTÕES QUE VOCÊ ACERTOU**:
    - Lista de números das questões respondidas corretamente pelo usuário.  
-   Exemplo: `[1, 2, 4, 5]`.
+   - Exemplo: `[1, 2, 4, 5]`.
 
 6. **QUESTÕES QUE VOCÊ ERROU**:
    - Lista de números das questões que o usuário errou.  
-   Exemplo: `[3, 6, 7]`.
+   - Exemplo: `[3, 6, 7]`.
 
 7. **VOCÊ ACERTOU**:
    - A quantidade total de questões respondidas corretamente.  
-   Exemplo: `7 QUESTÕES`.
+   - Exemplo: `7 QUESTÕES`.
 
 8. **VOCÊ ERROU**:
    - A quantidade total de questões respondidas incorretamente.  
-   Exemplo: `3 QUESTÕES`.
+   - Exemplo: `3 QUESTÕES`.
 
 9. **SUA MÉDIA FOI**:
    - Percentual de acertos em relação ao total de questões respondidas. 
    - Calculado como: `Média (%) = (Número de acertos / Total de questões) × 100`
-   Exemplo: `70%`.
+   - Exemplo: `70%`.
 
 10. **SITUAÇÃO**:
     - Determina se o usuário foi aprovado ou reprovado, baseado em um critério de acertos mínimo (70% no caso):
