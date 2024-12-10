@@ -1,11 +1,12 @@
 from config import *
-  
+
 def INICIO(materia): 
-    global MATERIA, RESPOSTAS_CORRETAS, RESPOSTAS_RESPONDIDAS
+    global MATERIA, RESPOSTAS_CORRETAS, RESPOSTAS_RESPONDIDAS, GABARITO
     MATERIA = materia
     RESPOSTAS_CORRETAS = {}
     RESPOSTAS_RESPONDIDAS = {}
-    
+    GABARITO = {"ERRADAS": [], "CERTAS": []}
+
     print(f"\033[93m 😃OLÁ NOVO USUÁRIO! IREI TE MANDAR ALGUMAS QUESTÕES DE: >>> {MATERIA} <<<. \033[0m") 
     sleep(1)
     print("\033[93m 😃LEMBRANDO QUE VOCÊ SÓ IRÁ SER APROVADO COM MAIS DE 70% DE ACERTOS! \033[0m") 
@@ -36,12 +37,9 @@ def QUESTAO(msg):
     print("=" * 20)
 
 def RESPOSTA(CERTA, QUESTAO):
-    global GABARITO, RESPOSTAS_CORRETAS, RESPOSTAS_RESPONDIDAS
-    if 'GABARITO' not in globals():
-        GABARITO = [[],[]]  
-    
+    global RESPOSTAS_CORRETAS, RESPOSTAS_RESPONDIDAS, GABARITO
     RESPOSTAS_CORRETAS[QUESTAO] = CERTA
-    
+
     while True:
         RES = input("\033[93m 😎DIGITE SUA RESPOSTA:\n>>> \033[0m").strip().upper()
         if not RES:
@@ -53,20 +51,21 @@ def RESPOSTA(CERTA, QUESTAO):
 
     RESPOSTAS_RESPONDIDAS[QUESTAO] = RES
 
-    if RES != CERTA:
-        print(f"\033[91m 🤬VOCÊ ERROU! ALTERNATIVA CORRETA É '{CERTA}' \033[0m")
-        GABARITO[0].append(QUESTAO)
-    else:
+    if RES == CERTA:
         print("\033[92m 😃CERTA RESPOSTA! \033[0m")
-        GABARITO[1].append(QUESTAO)
+        GABARITO["CERTAS"].append(QUESTAO)
+    else:
+        print(f"\033[91m 🤬VOCÊ ERROU! ALTERNATIVA CORRETA É '{CERTA}' \033[0m")
+        GABARITO["ERRADAS"].append(QUESTAO)
     sleep(1)
 
 def FIM():
     TIME = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    TOTAL = len(GABARITO[1]) + len(GABARITO[0])
-    ACERTOS = len(GABARITO[1])
-    MEDIA = (ACERTOS / TOTAL) * 100
-    SITUACAO = "👎REPROVADO" if ACERTOS < 0.7 * TOTAL else "👍APROVADO"
+    TOTAL = len(GABARITO["CERTAS"]) + len(GABARITO["ERRADAS"])
+    ACERTOS = len(GABARITO["CERTAS"])
+    ERROS = len(GABARITO["ERRADAS"])
+    MEDIA = (ACERTOS / TOTAL) * 100 if TOTAL > 0 else 0
+    SITUACAO = "👍APROVADO" if MEDIA >= 70 else "👎REPROVADO"
 
     RESULTADO = f'''
     =========================================
@@ -76,10 +75,10 @@ def FIM():
     ⭐MATÉRIA: {MATERIA}
     ⭐RESPOSTAS CORRETAS: {RESPOSTAS_CORRETAS}
     ⭐RESPOSTAS RESPONDIDAS: {RESPOSTAS_RESPONDIDAS}
-    ⭐QUESTÕES QUE VOCÊ ACERTOU: {GABARITO[1]}
-    ⭐QUESTÕES QUE VOCÊ ERROU: {GABARITO[0]}
+    ⭐QUESTÕES QUE VOCÊ ACERTOU: {GABARITO["CERTAS"]}
+    ⭐QUESTÕES QUE VOCÊ ERROU: {GABARITO["ERRADAS"]}
     ⭐VOCÊ ACERTOU {ACERTOS} QUESTÕES
-    ⭐VOCÊ ERROU {len(GABARITO[0])} QUESTÕES
+    ⭐VOCÊ ERROU {ERROS} QUESTÕES
     ⭐SUA MÉDIA FOI: {MEDIA:.0f}%
     ⭐SITUAÇÃO: {SITUACAO}
     -----------------------------------------
