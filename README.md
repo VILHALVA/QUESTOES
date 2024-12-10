@@ -18,9 +18,61 @@ O Bot é um quiz interativo que apresenta perguntas sobre uma matéria específi
 
 5. **Feedback:** Fornece retorno imediato sobre a correção das respostas.
 
-6. **Resultado Final:** Ao término do quiz, são exibidas estatísticas que incluem o nome da matéria, o time, questões corretas, questões erradas, quantidade de acertos, quantidade de erros, média de acertos, e a aprovação ou reprovação do jogador com base em uma porcentagem mínima de acertos.
+6. **Resultado Final:** Ao término do quiz, são exibidas estatísticas que incluem o nome da matéria, a data e a hora, respostas corretas, respostas respondidas, questões que você acertou, questões que você errou, quantidade de acertos, quantidade de erros, média de acertos, e a aprovação ou reprovação do jogador com base em uma porcentagem mínima de acertos.
 
 7. **Salvar Resultado Final:** O sistema perguntará se o usuário deseja salvar as informações. Se afirmativo, o resultado será salvo em um arquivo `.txt` no diretório `./CODIGO/files`, com o nome `QUESTOES_{MATERIA}_{TIME}.txt`, contendo os mesmos dados exibidos no console.
+
+## O QUE É O RESULTADO FINAL?
+O **"RESULTADO FINAL"** é uma **compilação dos dados gerados ao longo de uma simulação de perguntas e respostas**, destinada a fornecer uma visão geral do desempenho do usuário. Ele é apresentado em um formato bem estruturado e organizado, com as seguintes informações:
+
+### SUA ESTRUTURA:
+1. **DATA E HORA**:
+   - Indica o momento exato em que o resultado foi gerado, com formato `DD/MM/AAAA HH:MM:SS`.
+
+2. **MATÉRIA**:
+   - Identifica o tema ou disciplina das questões respondidas.
+
+3. **RESPOSTAS CORRETAS**:
+   - Um dicionário que mostra quais eram as respostas certas para cada pergunta.  
+   Exemplo: `{1: 'D', 2: 'B', ...}` (onde o número da questão é associado à resposta correta).
+
+4. **RESPOSTAS RESPONDIDAS**:
+   - Um dicionário que exibe as respostas fornecidas pelo usuário para cada pergunta.  
+   Exemplo: `{1: 'D', 2: 'A', ...}`.
+
+5. **QUESTÕES QUE VOCÊ ACERTOU**:
+   - Lista de números das questões respondidas corretamente pelo usuário.  
+   Exemplo: `[1, 2, 4, 5]`.
+
+6. **QUESTÕES QUE VOCÊ ERROU**:
+   - Lista de números das questões que o usuário errou.  
+   Exemplo: `[3, 6, 7]`.
+
+7. **VOCÊ ACERTOU**:
+   - A quantidade total de questões respondidas corretamente.  
+   Exemplo: `7 QUESTÕES`.
+
+8. **VOCÊ ERROU**:
+   - A quantidade total de questões respondidas incorretamente.  
+   Exemplo: `3 QUESTÕES`.
+
+9. **SUA MÉDIA FOI**:
+   - Percentual de acertos em relação ao total de questões respondidas. Calculado como:
+     \[
+     \text{Média (\%)} = \left( \frac{\text{Número de acertos}}{\text{Total de questões}} \right) \times 100
+     \]
+   Exemplo: `70%`.
+
+10. **SITUAÇÃO**:
+    - Determina se o usuário foi aprovado ou reprovado, baseado em um critério de acertos mínimo (70% no caso):
+      - 👍 APROVADO (se a média for maior ou igual a 70%).
+      - 👎 REPROVADO (se a média for inferior a 70%).
+
+### PROPÓSITO:
+- O **RESULTADO FINAL** serve como um relatório detalhado e objetivo para que o usuário possa:
+   1. **Feedback Educacional**: Pode ser utilizado para práticas de estudo, simulando provas e avaliando o progresso.
+   2. **Registro Histórico**: Ao salvar os resultados, o usuário pode acompanhar sua evolução ao longo do tempo.
+   3. **Geração de Relatórios**: Facilita a criação de relatórios para análises ou compartilhamento de dados com professores ou colegas.
 
 ## EXECUTANDO O PROJETO:
 1. **Instalar as dependências**:
