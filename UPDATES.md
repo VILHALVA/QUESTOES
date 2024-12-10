@@ -1,4 +1,30 @@
 # ATUALIZAÇÕES:
+## VERSÃO 1.9 - 10/12/2024:
+### MELHORIAS NO RESULTADO FINAL:
+- ✅ O `RESULTADO FINAL` agora exibe as informações de forma mais clara e organizada, incluindo:  
+  - `RESPOSTAS CORRETAS` e `RESPOSTAS RESPONDIDAS` apresentados como dicionários.  
+  - Reformulação completa do template, que agora contém:  
+    - **DATA E HORA**  
+    - **MATÉRIA**  
+    - **RESPOSTAS CORRETAS**  
+    - **RESPOSTAS RESPONDIDAS**  
+    - **QUESTÕES QUE VOCÊ ACERTOU**  
+    - **QUESTÕES QUE VOCÊ ERROU**  
+    - **VOCÊ ACERTOU {X} QUESTÕES**  
+    - **VOCÊ ERROU {X} QUESTÕES**  
+    - **SUA MÉDIA FOI**  
+    - **SITUAÇÃO**  
+
+- ✅ Alterações nas nomenclaturas do código (em `./CODIGO/model/central.py`):  
+  - `RES` foi renomeado para `RESULTADO`.  
+  - O antigo `RESULTADO` agora é chamado de `SITUAÇÃO`.  
+
+### CORES NO TERMINAL:  
+- ✅ Todo o bot agora conta com um esquema de cores para maior clareza e destaque:  
+  - **Vermelho**, **Verde**, **Azul** e **Ciano** foram adicionados ao terminal.  
+  - **Exceções:** as seções `RESULTADO FINAL`, `QUESTÕES (em plugins)` e `FINAL` permanecem sem cores para manter o padrão.  
+---
+
 ## VERSÃO 1.8 - 27/09/2024:
 * ✅ Foi implementada uma arte ASCII gerada dinamicamente com a biblioteca **PyFiglet**, que exibe o texto 'QUESTOES' em um formato estilizado no console. Para facilitar a instalação dessa e de outras dependências, foi criado o arquivo `requirements.txt`."
 * ✅ O `RESULTADO FINAL` foi redesenhado e refatorado para incluir mais informações relevantes, como `MATERIA` e `TIME`, apresentados no formato: dd/mm/aa - hh:mm:ss. 
