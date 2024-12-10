@@ -58,9 +58,7 @@ O **"RESULTADO FINAL"** é uma **compilação dos dados gerados ao longo de uma 
 
 9. **SUA MÉDIA FOI**:
    - Percentual de acertos em relação ao total de questões respondidas. Calculado como:
-     \[
-     \text{Média (\%)} = \left( \frac{\text{Número de acertos}}{\text{Total de questões}} \right) \times 100
-     \]
+   Média (%) = (Número de acertos / Total de questões) × 100
    Exemplo: `70%`.
 
 10. **SITUAÇÃO**:
