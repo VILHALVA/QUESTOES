@@ -1,112 +1,181 @@
-# QUESTOES
-👨‍💻QUESTÕES É UM BOT DE SIMULADOR DE ENEM QUE RODA NO CONSOLE DA IDE.
+# ATUALIZAÇÕES:
+## VERSÃO 1.9 - 10/12/2024:
+### MELHORIAS NO RESULTADO FINAL:
+- ✅ O `RESULTADO FINAL` agora exibe as informações de forma mais clara e organizada, incluindo:  
+  - `RESPOSTAS CORRETAS` e `RESPOSTAS RESPONDIDAS` apresentados como dicionários.  
+  - Reformulação completa do template, que agora contém:  
+    - **DATA E HORA**  
+    - **MATÉRIA**  
+    - **RESPOSTAS CORRETAS**  
+    - **RESPOSTAS RESPONDIDAS**  
+    - **QUESTÕES QUE VOCÊ ACERTOU**  
+    - **QUESTÕES QUE VOCÊ ERROU**  
+    - **VOCÊ ACERTOU {X} QUESTÕES**  
+    - **VOCÊ ERROU {X} QUESTÕES**  
+    - **SUA MÉDIA FOI**  
+    - **SITUAÇÃO**  
 
-<img src="./IMAGENS/FOTO_01.png" align="center" width="500"> <br>
-<img src="./IMAGENS/FOTO_02.png" align="center" width="500"> <br>
-<img src="./IMAGENS/FOTO_03.png" align="center" width="500"> <br>
+- ✅ Alterações nas estruturas e nomenclaturas do código (em `./CODIGO/model/central.py`):  
+  - O `GABARITO` foi convertido de uma lista para um dicionário.
+  - `RES` foi renomeado para `RESULTADO`. 
+  - O antigo `RESULTADO` agora é chamado de `SITUAÇÃO`.  
 
-## DESCRIÇÃO:
-O Bot é um quiz interativo que apresenta perguntas sobre uma matéria específica. A seguir, uma descrição resumida de suas funcionalidades:
+### CORES NO TERMINAL:  
+- ✅ Todo o bot agora conta com um esquema de cores para maior clareza e destaque:  
+  - **Vermelho**, **Verde**, **Azul** e **Ciano** foram adicionados ao terminal.  
+  - **Exceções:** as seções `RESULTADO FINAL`, `QUESTÕES (em plugins)` e `FINAL` permanecem sem cores para manter o padrão.  
+---
 
-1. **Menu Principal:** O usuário pode escolher entre mais de 50 matérias disponíveis.
+## VERSÃO 1.8 - 27/09/2024:
+* ✅ Foi implementada uma arte ASCII gerada dinamicamente com a biblioteca **PyFiglet**, que exibe o texto 'QUESTOES' em um formato estilizado no console. Para facilitar a instalação dessa e de outras dependências, foi criado o arquivo `requirements.txt`."
+* ✅ O `RESULTADO FINAL` foi redesenhado e refatorado para incluir mais informações relevantes, como `MATERIA` e `TIME`, apresentados no formato: dd/mm/aa - hh:mm:ss. 
+* ✅ Agora, ao final da exibição do `RESULTADO FINAL`, o sistema perguntará ao usuário se deseja salvar as informações. Caso a resposta seja afirmativa, o resultado será salvo em um arquivo `.txt` no diretório `./CODIGO/files`, com o nome `QUESTOES_{MATERIA}_{TIME}.txt`. O arquivo conterá os mesmos dados que foram exibidos no console, bastando confirmar com a letra 'S'.
+* ✅ Para garantir que o nome da matéria seja exibido corretamente no `RESULTADO FINAL`, foi necessário modificar todos os arquivos em `./CODIGO/plugins`. A alteração envolveu a modificação da chamada de função de `INICIO("MATERIA = NOME DA MATERIA")` para `INICIO(NOME DA MATERIA")`. Com essa mudança, a variável `materia/MATERIA` agora é tratada como uma variável global, permitindo que seu valor seja acessado de forma consistente em todo o sistema.
+---
 
-2. **Boas-Vindas:** O bot saúda o jogador e informa sobre a matéria em questão.
+## VERSÃO 1.7 - 26/09/2024:
+### ✅ PRINCIPAIS MUDANÇAS REALIZADAS NA ESTRUTURA DO PROJETO:
+1. **Novo arquivo `config.py`**:
+   - 🔸 Criado para centralizar todas as importações e dependências do projeto. Agora, todos os arquivos fazem referência a este arquivo, simplificando a gestão de imports e prevenindo possíveis conflitos de importação.
 
-3. **Perguntas:** O usuário recebe uma série de perguntas relacionadas à matéria selecionada.
+2. **Renomeação e reorganização de arquivos**:
+   - 🔸 O antigo arquivo `AAAA.py` foi renomeado para `central.py` e movido para o diretório `model`.
+   - 🔸 As funções `apresentação` e `final` agora estão localizadas nos arquivos `apresentacao.py` e `final.py`, dentro do diretório `model`.
 
-4. **Respostas:** O bot aceita respostas (A, B, C ou D) para cada pergunta.
+3. **Padronização de nomes de arquivos**:
+   - 🔸 Todos os arquivos foram renomeados, deixando de estar em UPPERCASE para ficarem em lowercase, seguindo boas práticas de nomeação.
 
-5. **Feedback:** Fornece retorno imediato sobre a correção das respostas.
+4. **Reclassificação do projeto**:
+   - ✅ Este projeto foi reclassificado e não faz mais parte da categoria de [APLICATIVOS](https://github.com/VILHALVA?tab=repositories&q=topic:APLICATIVO+topic:TERMINAL). Agora ele pertence à categoria de [BOTS](https://github.com/VILHALVA?tab=repositories&q=topic:BOT+topic:TERMINAL). Com isso, o executável e o instalador foram removidos.
 
-6. **Cores no terminal:** As mensagens são destacadas com Vermelho, Verde, Azul e Ciano! Algumas seções mantêm o padrão sem cores para facilitar a leitura.
+### 🔵 ESTRUTURA DE DIRETÓRIOS:
+- **Antes:**
+  ```plaintext
+  /CODIGO
+  │
+  ├── MAIN.py
+  ├── AAAA.py
+  └── APRESENTACAO.py
+  └── // Outros arquivos...
+  ```
 
-7. **Resultado Final:** Ao término do quiz, são exibidas estatísticas que incluem o nome da matéria, a data e a hora, respostas corretas, respostas respondidas, questões que você acertou, questões que você errou, quantidade de acertos, quantidade de erros, média de acertos, e a aprovação ou reprovação do jogador com base em uma porcentagem mínima de acertos.
+- **Depois:**
+  ```plaintext
+  /CODIGO
+  │
+  ├── /plugins
+  │   ├── matematica.py
+  │   ├── biologia.py
+  │   └── // Outros arquivos...
+  │
+  ├── /model
+  │   └── central.py
+  │   └── apresentacao.py
+  |   └── final.py
+  ├── config.py
+  └── main.py
+  ```
 
-8. **Salvar Resultado Final:** O sistema perguntará se o usuário deseja salvar as informações. Se afirmativo, o resultado será salvo em um arquivo `.txt` no diretório `./CODIGO/files`, com o nome `QUESTOES_{MATERIA}_{TIME}.txt`, contendo os mesmos dados exibidos no console.
+---
 
-## O QUE É O RESULTADO FINAL?
-O **"RESULTADO FINAL"** é uma **compilação dos dados gerados ao longo de uma simulação de perguntas e respostas**, destinada a fornecer uma visão geral do desempenho do usuário. Ele é apresentado em um formato bem estruturado e organizado, com as seguintes informações:
+## VERSÃO 1.6 - 29/06/2024:
+* ✅Foi criado um instalador para Windows X64 apartir do executavel.
+---
 
-### SUA ESTRUTURA:
-1. **DATA E HORA**:
-   - Indica o momento exato em que o resultado foi gerado, com formato `DD/MM/AAAA HH:MM:SS`.
+## VERSÃO 1.5 - 18/01/2024:
+* ✅No `MENU PRINCIPAL`, substituímos as estruturas condicionais (if, elif) por um dicionário para mapear as opções diretamente para as funções correspondentes.
+* ✅Foi adicionado um laço de repetição: Toda a vez que o usuário terminar de responder as questões e sair o resultado, o programa reinicia automaticamente; Dando a oportunidade para responder outras máterias sem a necissidade de reiniciar o App. O programa só para quando o usuário digitar `0` (SAIR DO PROGRAMA). 
+* ✅30 novas máterias foram adicionadas:
+*   🔸HISTÓRIA DO BRASIL
+*   🔸GEOGRAFIA DO BRASIL
+*   🔸CIVISMO
+*   🔸INFORMATICA
+*   🔸ENGENHARIA CIVIL
+*   🔸AGRONOMIA
+*   🔸TURISMO
+*   🔸ENGENHARIA ELÉTRICA
+*   🔸ADMINISTRAÇÃO EMPRESARIAL
+*   🔸PEDAGOGIA
+*   🔸PSICANÁLISE
+*   🔸JORNALISMO
+*   🔸ENFERMAGEM
+*   🔸NUTRIÇÃO
+*   🔸EDUCAÇÃO FÍSICA
+*   🔸ESPANHOL
+*   🔸INGLÊS
+*   🔸HEBRAICO
+*   🔸GREGO
+*   🔸BIOMEDICINA
+*   🔸MEDICINA VETERINARIA
+*   🔸ADVOCACIA
+*   🔸FISIOTERAPIA
+*   🔸CIBER SEGURANÇA
+*   🔸ENGENHARIA MECÂNICA
+*   🔸ANTROPOLOGIA
+*   🔸GEOLOGIA
+*   🔸PALEONTOLOGIA
+*   🔸AVIAÇÃO
+*   🔸ENGENHARIA FLORESTAL
+---
 
-2. **MATÉRIA**:
-   - Identifica o tema ou disciplina das questões respondidas.
+## VERSÃO 1.4 - 16/01/2024:
+* ✅Foi adicionado um sistema de validação para empedir que o usuário deixe uma questão em branco ou digite um valor inválido.
+* ✅Foi corrigido o bug de fechamento inesperado do arquivo executavel.
+* ✅Foi corrigido o valor da média no resultado final. Agora só exibe um valor inteiro.
+* ✅Depois de exibir o resultado o programa fecha em 60 segundos (Exibe uma contagem regressiva).
+---
 
-3. **RESPOSTAS CORRETAS**:
-   - Um dicionário que mostra quais eram as respostas certas para cada pergunta.  
-   - Exemplo: `{1: 'D', 2: 'B', ...}` (onde o número da questão é associado à resposta correta).
+## VERSÃO 1.3 - 21/12/2023:
+* ✅Foi adicionado um `MENU PRINCIPAL`; Ao iniciar o app, o usuário poderá escolher a máteria apenas digitando o número correspondente (Já tem o sistema de validação).
+* ✅17 novas máterias foram adicionadas:
+    * 🔸PORTUGUES
+    * 🔸MATEMATICA
+    * 🔸QUIMICA
+    * 🔸BIOLOGIA
+    * 🔸HISTORIA
+    * 🔸GEOGRAFIA
+    * 🔸FILOSOFIA
+    * 🔸SOCIOLOGIA
+    * 🔸ARTES
+    * 🔸RELIGIAO
+    * 🔸LITERATURA
+    * 🔸TECNOLOGIA
+    * 🔸MEDICINA
+    * 🔸DIREITOS
+    * 🔸POLITICA
+    * 🔸ECONOMIA
+    * 🔸MARKETING
+* ✅Depois de muito tempo, temos o prazer de anunciar o lançamento publico desse maravilhoso app para Windows X64. Se trata de um arquivo executável. Basta apenas baixar e executar.
+---
 
-4. **RESPOSTAS RESPONDIDAS**:
-   - Um dicionário que exibe as respostas fornecidas pelo usuário para cada pergunta.  
-   - Exemplo: `{1: 'D', 2: 'A', ...}`.
+## VERSÃO 1.2 - 17/08/2022:
+* ✅Agora temos o encapsulamento de módulos em arquivos diferentes. Apartir de agora o código será publicado em formato de zip; Contendo: As funções de análise e um arquivo para cada materia. O aluno poderá escolher a matéria apenas dando play no arquivo com o seu nome;
+* ✅Foi lançado uma breve saudação; Anuciando o nome da matéria a ser respondida;
+* ✅Agora temos a função de "CARREGANDO({C}%)..." ao iniciar;
+* ✅Se o usuário errar a questão, o script irá mostrar a alternativa correta;
+* ✅As alternativas foram mudadas de lower(a,b,c,d) para upper(A,B,C,D);
+* ✅No resultado final, ele exibe a média de acertos;
+* ✅No resultado final, o algoritmo irá calcular a porcetagem de acertos e o número de questões corretas. Se os acertos forem maiores do que 70% ou o número de questões corretas forem maiores que o número de questões erradas: o aluno será aprovado; Caso contrário, será reprovado. Isso permitirá ao dono colocar mais de 10 Questões ou menos para cada materia;
+* ✅Agora temos 10 Questões de Teologia.
+---
 
-5. **QUESTÕES QUE VOCÊ ACERTOU**:
-   - Lista de números das questões respondidas corretamente pelo usuário.  
-   - Exemplo: `[1, 2, 4, 5]`.
+## VERSÃO 1.1 - 29/06/2022:
+* ✅Enquanto o usuário não enviar a resposta entre "abcd", será considerada inválida; Repetindo a mesma pergunta novamente;
+* ✅Agora ele exibe "CERTA RESPOSTA" caso tenha acertado e "VOCÊ ERROU" caso tenha errado;
+* ✅Foi criado uma nova função para estética do divisor entre as questões (=);
+* ✅Agora temos uma breve saudação antes de começar o questionário.
+* ✅Substituímos as questões de 3 até 10 de Teologia para Física volume 3;
+* ✅Agora o aluno só será aprovado se acertar mais de 7 Questões.
+---
 
-6. **QUESTÕES QUE VOCÊ ERROU**:
-   - Lista de números das questões que o usuário errou.  
-   - Exemplo: `[3, 6, 7]`.
+## VERSÃO 1.0 - 20/06/2022:
+* ✅Foi lançado hoje um algoritmo de perguntas objetivas (Como a prova do ENEM); Por enquanto seu nome é "QUESTOES" e é um projeto solo. 
+* ✅Código bem organizado: A função de avaliação de resposta  está no módulo A, as questões no B, e C para o resultado final; 
+* ✅Atualmente tem 10 perguntas (2 de Física e 8 de Teologia);
+* ✅O usuário tem apenas uma chance para responder cada pergunta após iniciar o algoritmo;
+* ✅Existe um indice da lista para respostas certas e para respostas erradas;
+* ✅Modo lento de 1 sg está ativado para cada pergunta;
+* ✅Por padrão ele aceita valores INT e FLOAT como respostas erradas;
+* ✅Ele exibe se o usuário errou ou acertou após responder;
+* ✅No final ele mostra quais foram as Questões certas e erradas (com a quantidade) junto com o resultado final se o usuário foi aprovado no teste (Apenas se os acertos forem maiores do que os erros) ou não.
 
-7. **VOCÊ ACERTOU**:
-   - A quantidade total de questões respondidas corretamente.  
-   - Exemplo: `7 QUESTÕES`.
-
-8. **VOCÊ ERROU**:
-   - A quantidade total de questões respondidas incorretamente.  
-   - Exemplo: `3 QUESTÕES`.
-
-9. **SUA MÉDIA FOI**:
-   - Percentual de acertos em relação ao total de questões respondidas. 
-   - Calculado como: `Média (%) = (Número de acertos / Total de questões) × 100`
-   - Exemplo: `70%`.
-
-10. **SITUAÇÃO**:
-    - Determina se o usuário foi aprovado ou reprovado, baseado em um critério de acertos mínimo (70% no caso):
-      - 👍 APROVADO (se a média for maior ou igual a 70%).
-      - 👎 REPROVADO (se a média for inferior a 70%).
-
-### PROPÓSITO:
-- O **RESULTADO FINAL** serve como um relatório detalhado e objetivo para que o usuário possa:
-   1. **Feedback Educacional**: Pode ser utilizado para práticas de estudo, simulando provas e avaliando o progresso.
-   2. **Registro Histórico**: Ao salvar os resultados, o usuário pode acompanhar sua evolução ao longo do tempo.
-   3. **Geração de Relatórios**: Facilita a criação de relatórios para análises ou compartilhamento de dados com professores ou colegas.
-
-## EXECUTANDO O PROJETO:
-1. **Instalar as dependências**:
-   - Antes de rodar o bot, é essencial garantir que todas as dependências estejam instaladas. No terminal, navegue até o diretório `CODIGO` e execute o seguinte comando para instalar os pacotes listados no arquivo `requirements.txt`:
-     ```bash
-     pip install -r requirements.txt
-     ```
-
-2. **Execute o programa:**
-   - Para iniciar o programa, execute o comando abaixo:
-   ```bash
-   python main.py
-   ```
-
-3. **Escolha da Matéria:**
-   - Assim que o bot iniciar, você verá um menu principal no console com várias matérias numeradas.
-   - Leia as matérias disponíveis e digite o número correspondente à matéria que deseja responder.
-
-4. **Responda às perguntas:**
-   - O bot executará a matéria que você selecionou.
-   - Responda às perguntas corretamente, enviando apenas uma das opções: `A`, `B`, `C` ou `D`.
-   - Após apresentar o `RESULTADO FINAL`, o bot perguntará se você deseja salvar as informações. Envie `S` para confirmar ou qualquer outro caractere para recusar.
-
-5. **Retorno ao menu principal:**
-   - Após a execução de cada materia, o bot retornará automaticamente ao menu principal, permitindo que você escolha outra materia ou opte por sair.
-
-6. **Saindo do programa:**
-   - Quando desejar encerrar o programa, digite `0` no menu principal. Isso encerrará o bot de forma segura.
-
-## NÃO SABE?
-- Entendemos que para manipular arquivos em muitas linguagens e tecnologias, é necessário possuir conhecimento nessas áreas. Para auxiliar nesse aprendizado, oferecemos cursos gratuitos disponíveis:
-* [CURSO DE PYTHON](https://github.com/VILHALVA/CURSO-DE-PYTHON)
-* [CONFIRA MAIS CURSOS](https://github.com/VILHALVA?tab=repositories&q=+topic:CURSO)
-
-## CREDITOS E MAIS:
-- [PROJETO CRIADO PELO VILHALVA](https://github.com/VILHALVA)
-- [CLIQUE AQUI PARA VER O HISTÓRICO DE ATUALIZAÇÕES](./UPDATES.md)
