@@ -1,4 +1,4 @@
-# ATUALIZAÇÕES:
+# [ATUALIZAÇÕES:](./UPDATES.md#vers%C3%A3o-10---20062022)
 ## VERSÃO 1.9 - 10/12/2024:
 ### MELHORIAS NO RESULTADO FINAL:
 - ✅ O `RESULTADO FINAL` agora exibe as informações de forma mais clara e organizada, incluindo:  
